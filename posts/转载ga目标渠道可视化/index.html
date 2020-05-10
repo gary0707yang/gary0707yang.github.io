@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PTPVGMK');</script>
+  
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <title>[转载]如何在GA 中使用转化漏斗功能 - GarysMap 营销笔记</title>
+    <meta name="description" content="原始链接： Jeffshow.com: 如何在GA 中使用转化漏斗功能
+ 一、引言 很多网站都有引导用户发生转化的相对固定的路径，比如电商类网站的首页 - 产品页 - 加入购物车 - 结算 - 下单完成，这样的路径我们称之为转化路径。经验表明，进入了转化路径的用户，在各个转化节点上会存在不同程度的流失，如果用图表来说明从前一步到达后一步的数据，大致会呈现一个漏斗形状。如果我们能知道用户在转化路径上各个节点的流失情况，那么我们便可以针对性地对转化路径进行优化，从而提高转化率。
+二、转化漏斗的设置 在GA 中，转化漏斗功能位于转化 - 目标 -渠道可视化 这里，GA 英文版中这一功能被称为Funnel Visualization，即漏斗的可视化。要想在这里看到转化漏斗的数据，必须先在目标那里设置好。目标的设置位于管理 - 查看 - 目标，要想使用转化漏斗功能，必须要启用目标设置中的渠道，一个设置demo如下图所示：
+这里需要注意的有三点：
+1）只有目标网址类型的目标才支持渠道的设置，即才支持转化漏斗功能；
+2）渠道中各个步骤的url 匹配规则总是和目标网址那里选定的规则一致，比如，如果目标网址那里你选用的是正则表达式的规则匹配，那么步骤的url 记得也要使用正则表达式来写；
+3）步骤1 后边的能否跳过这个选项会决定最终参与转化漏斗计算的数据，默认是否，即可跳过，如果你选择了是，那么只有当一次访问当中真的经过了步骤1，才能算作真正的进入了转化漏斗，才能参与转化漏斗数据的计算。
+三、转化漏斗的报告 在GA 中转化漏斗报告位于渠道可视化，为了方便说明，以下一律使用渠道可视化来表述。渠道可视化报表主要分为两部分，上半部分是目标的转化率和目标转化率的折线图，下半部分即是转化漏斗图。我们这里主要关注转化漏斗图，一个典型的转化漏斗图如下所示：
+转化漏斗又可分为三个部分，左边是渠道进入点，表示的是用户在进入转化渠道前浏览的那个页面，如果着陆页即为转化渠道中的页面，那么渠道进入点显示为(entrance)，渠道进入点最多展示top 5页面的数据，绿色小三角即表示进入渠道；中间为转化漏斗，清楚地表示了用户在各个转化节点的流失数据，转化节点间流失的百分比数据不仅体现在条形中绿色和红色的占比，也体现在转化节点间漏斗的大小；最右边部分即为渠道退出点，展示了用户从转化渠道退出后去向了哪些页面，如果渠道中某步骤的有效的浏览即为退出页面，那么渠道退出点将以(exit)表示。
+四、转化漏斗数据计算的规则 渠道可视化中数据的计算比较复杂，要理解这里边数据的计算逻辑，首先需要理解渠道进入点和渠道退出点这两个维度。
+为了方便说明，我们假设用户设定的目标页面为Goal，各转化节点为Step1 -&gt; Step2 -&gt; Step3 -&gt; Step4 ，我们看到，这四个步骤的Step Number 依次递增。
+ 渠道进入点和渠道退出点  渠道进入点表示的是一次session 中首次匹配到转化渠道页面时的前一个页面，之前已经说到，如果渠道页面即为着陆页，那么渠道进入点为(entrance)。这里需要特别注意的是，渠道进入点总是被分配给当前session 中Step Number 最小的那个。比如，一次用户的浏览为：entrance -&gt; Other1 -&gt; Step2 -&gt; Step1 -&gt; Step3 -&gt; exit，在渠道可视化报告中，渠道进入点为Other1，将展示在Step1 的左边，而不是在Step 2的左边。">
+
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://garysmap.com/posts/",
+          "name": "Posts",
+          "image": ""
+        }
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://garysmap.com/posts/%E8%BD%AC%E8%BD%BDga%E7%9B%AE%E6%A0%87%E6%B8%A0%E9%81%93%E5%8F%AF%E8%A7%86%E5%8C%96/",
+          "name": "[转载]如何在GA 中使用转化漏斗功能",
+          "image": ""
+        }
+      }
+    ]
+}
+</script>
+
+
+
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/local.css">
+</head>
+  <body>
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTPVGMK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">
+  <a class="text-decoration-none" href="https://garysmap.com/">GarysMap 营销笔记</a></h5>
+  <nav class="my-2 my-md-0 mr-md-3"></nav>
+</div>
+
+  <div class="py-5 text-center">
+    <h1>[转载]如何在GA 中使用转化漏斗功能</h1>
+  </div>
+
+
+    <div id="content">
+<div class="container" role="main">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+  
+
+    
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">
+      <a href="/"><i class="fa fa-home"></i></a>
+    </li>
+
+  <li class="breadcrumb-item">
+    <a href="/posts/"><small>Posts</small></a>
+  </li>
+  
+  <li class="breadcrumb-item active" aria-current="page">
+    <small>[转载]如何在GA 中使用转化漏斗功能</small>
+  </li>
+  
+  </ol>
+</nav>
+
+
+    </div>
+  </div>
+  <article>
+    <div class="row justify-content-center">
+      
+        <div class="col-lg-8">
+          <blockquote>
+<p>原始链接： <a href="https://jeffshow.com/how-to-use-funnel-visualization-in-ga.html">Jeffshow.com: 如何在GA 中使用转化漏斗功能</a></p>
+</blockquote>
+<h2 id="一引言">一、引言</h2>
+<p>很多网站都有引导用户发生转化的相对固定的路径，比如电商类网站的首页 - 产品页 - 加入购物车 - 结算 - 下单完成，这样的路径我们称之为转化路径。经验表明，进入了转化路径的用户，在各个转化节点上会存在不同程度的流失，如果用图表来说明从前一步到达后一步的数据，大致会呈现一个漏斗形状。如果我们能知道用户在转化路径上各个节点的流失情况，那么我们便可以针对性地对转化路径进行优化，从而提高转化率。</p>
+<h2 id="二转化漏斗的设置">二、转化漏斗的设置</h2>
+<p>在GA 中，转化漏斗功能位于转化 - 目标 -渠道可视化 这里，GA 英文版中这一功能被称为Funnel Visualization，即漏斗的可视化。要想在这里看到转化漏斗的数据，必须先在目标那里设置好。目标的设置位于管理 - 查看 - 目标，要想使用转化漏斗功能，必须要启用目标设置中的渠道，一个设置demo如下图所示：</p>
+<p><img src="/pics/goal-funnel-settings1.png" alt="图"></p>
+<p>这里需要注意的有三点：</p>
+<p>1）只有目标网址类型的目标才支持渠道的设置，即才支持转化漏斗功能；</p>
+<p>2）渠道中各个步骤的url 匹配规则总是和目标网址那里选定的规则一致，比如，如果目标网址那里你选用的是正则表达式的规则匹配，那么步骤的url 记得也要使用正则表达式来写；</p>
+<p>3）步骤1 后边的能否跳过这个选项会决定最终参与转化漏斗计算的数据，默认是否，即可跳过，如果你选择了是，那么只有当一次访问当中真的经过了步骤1，才能算作真正的进入了转化漏斗，才能参与转化漏斗数据的计算。</p>
+<h2 id="三转化漏斗的报告">三、转化漏斗的报告</h2>
+<p>在GA 中转化漏斗报告位于渠道可视化，为了方便说明，以下一律使用渠道可视化来表述。渠道可视化报表主要分为两部分，上半部分是目标的转化率和目标转化率的折线图，下半部分即是转化漏斗图。我们这里主要关注转化漏斗图，一个典型的转化漏斗图如下所示：</p>
+<p><img src="/pics/conversion-funnel.png" alt="图"></p>
+<p>转化漏斗又可分为三个部分，左边是渠道进入点，表示的是用户在进入转化渠道前浏览的那个页面，如果着陆页即为转化渠道中的页面，那么渠道进入点显示为(entrance)，渠道进入点最多展示top 5页面的数据，绿色小三角即表示进入渠道；中间为转化漏斗，清楚地表示了用户在各个转化节点的流失数据，转化节点间流失的百分比数据不仅体现在条形中绿色和红色的占比，也体现在转化节点间漏斗的大小；最右边部分即为渠道退出点，展示了用户从转化渠道退出后去向了哪些页面，如果渠道中某步骤的有效的浏览即为退出页面，那么渠道退出点将以(exit)表示。</p>
+<h2 id="四转化漏斗数据计算的规则">四、转化漏斗数据计算的规则</h2>
+<p>渠道可视化中数据的计算比较复杂，要理解这里边数据的计算逻辑，首先需要理解渠道进入点和渠道退出点这两个维度。</p>
+<p>为了方便说明，我们假设用户设定的目标页面为Goal，各转化节点为Step1 -&gt; Step2 -&gt; Step3 -&gt; Step4 ，我们看到，这四个步骤的Step Number 依次递增。</p>
+<ol>
+<li>渠道进入点和渠道退出点</li>
+</ol>
+<p>渠道进入点表示的是一次session 中首次匹配到转化渠道页面时的前一个页面，之前已经说到，如果渠道页面即为着陆页，那么渠道进入点为(entrance)。这里需要特别注意的是，渠道进入点总是被分配给当前session 中Step Number 最小的那个。比如，一次用户的浏览为：entrance -&gt; Other1 -&gt; Step2 -&gt; Step1 -&gt; Step3 -&gt; exit，在渠道可视化报告中，渠道进入点为Other1，将展示在Step1 的左边，而不是在Step 2的左边。</p>
+<p>渠道退出点表示的是一次session 中最后一个非重复且能匹配转化渠道页面的后一个页面，如果该页面即为退出页面，那么渠道退出点为(exit)。比如，一次用户的浏览为：entrance -&gt; Other1 -&gt; Step1 -&gt; Step2 -&gt; Step1 -&gt;exit，在渠道可视化报告中，这次的渠道退出点为Step1，渠道进入点为Other1，并且Step1 将最终出现在Step2的右侧（如果在top5渠道退出点的话）。</p>
+<ol start="2">
+<li>一次session 中每个Step都只会计算一次</li>
+</ol>
+<p>不管一次session  中某个Step 被经过多少次，最终每个Step 最多计数一次，这个有点类似于唯一身份浏览量的概念。</p>
+<ol start="3">
+<li>被跳过的Step 会被自动填充</li>
+</ol>
+<p>比如，一次session 中由Step1 -&gt; Step3，那么最终出现在渠道可视化报表中的是Step1 -&gt; Step2 -&gt; Step3，被跳过的Step2 被自动填充上来了。</p>
+<ol start="4">
+<li>渠道转化率和转化率</li>
+</ol>
+<p>某目标的渠道转化率 = 该目标的达成次数/进入该目标渠道的次数 * 100%</p>
+<p>某目标的转化率 = 该目标的达成次数/总的访问次数 * 100%</p>
+<ol start="5">
+<li>一个相等关系</li>
+</ol>
+<p>渠道进入次数 =目标达成次数 + 渠道退出次数</p>
+<p>即转化漏斗左边所有绿色三角旁边数字之和要等于目标达成的次数加上右边红色三角旁边数字之和</p>
+<h2 id="五总结">五、总结</h2>
+<p>渠道可视化功能关注的是各转化节点间的流失情况，它并不会告诉你用户真实的行为轨迹，如果需要知道用户在转化节点上的回环情况，可以查看下目标下的目标流报告；如果需要查看用户达成目标前经过的其他非转化节点页面，可以看下逆向目标路径报告。</p>
+<p>但是，渠道可视化报告能够从宏观上让你把握下用户在转化路径上的流失，通过分析渠道进入点和渠道退出点还能对转化渠道设置进行诊断，从而提高各渠道节点的通过率，并最终提高渠道转化率以及ROI。</p>
+<h2 id="六参考资料">六、参考资料</h2>
+<ol>
+<li>
+<p>蓝鲸博客：Google Analytics渠道可视化数据测试</p>
+</li>
+<li>
+<p>GA 帮助文档：渠道可视化与目标流</p>
+</li>
+<li>
+<p>GA 帮助文档：创建、修改和共享目标</p>
+</li>
+<li>
+<p>KISSmetrics：The Google Analytics Conversion Funnel Survival Guide [neilpatel]</p>
+</li>
+</ol>
+
+          
+        </div>
+      
+    </div>
+    
+  </article>
+</div>
+
+    </div>  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1 small">&copy;
+      2020
+    </p>
+    <ul class="list-inline">
+    </ul>
+  </footer>
+
+
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

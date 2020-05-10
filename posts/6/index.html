@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PTPVGMK');</script>
+  
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <title>网站迁移与SEO - GarysMap 营销笔记</title>
+    <meta name="description" content="目录  网站迁移思路 注意事项 执行计划 相关评估 上线过程 追踪效果  1. 网站迁移思路 来到一家新公司做SEO工作，对本公司网站进行审查之后，综合考虑决定放弃原有的公司网站，新开一坑，把网站重新建设一遍。 主要考虑两个因素：
+  技术上：原来网站采用KingCMS框架，用的技术和php版本都比较老，有安全问题；另外后台管理非常麻烦，生成静态页面常常失败，也给不出问题原因，导致很多页面直接在静态模板上改动，无法在进行网站整体控制，难以管理。
+  内容上：网站设计样式古朴，前端代码和样式不统一，无法做整体性修改，之前维护也没有备注说明，难以维护；SEO手法有点问题，很多重复，相似页面，内容过于简短。设计形式也不统一。业务端反馈网站上也有很多淘汰产品，因为网站管理复杂所以也不好及时下线，更新速度慢，容易出错。
+  基于目前情况，考虑公司SEO需求，决定采用新网站，改变管理难，更新难的情况，从基础结构上改变SEO的问题。难点在于梳理网站之前的资料，尽量保证之前的自然流量能被合理继承，不影响网站在搜索引擎的表现。
+2. 注意事项   搜索引擎隐蔽性和旧网站域名的可访问性：
+因为要确保开发过程中网站也可以访问旧资源，所以没修改DNS域名解析。通过在新服务器上添加域名解析，并以修改HOST文件的方式在本地链接了起来。这样既能保证搜索引擎的隐蔽性，也能如同正常网站一样设置本地爬虫。方便排查问题并修改，最小化域名切换时出错的可能性。安装SSL, 尽量减少硬链接。
+  SEO资源的继承：
+尽可能保留有用的排名，继承SEO效果。查看网站的Search Console，将排名点击靠前的页面url导出表格，针对这些资源做详尽的分析，尽量保留之前的URL和相应网站内容。如果URL有变动，则需要做好301链接，引导用户进入相似的页面，减少SEO资源浪费。
+  3. 执行计划 网站迁移，一方面是技术框架，一方面是内容，还有一方面是UX设计。从这三个方面抓好网站的修改主题，工作就不会遇到太大困难。
+需要注意的是：UX设计我们并不专业，即使设计出好看的网站框架，限于技术水平，技术上实现也比较有限。所以UX设计是我们网站建设的主要难点，很多次大的改版或者项目延期都是因为网站设计产生分歧。直到最后，基于网站的平台架构，修改小细节成为风格，才完成网站升级的任务。很多地方仍然没有统一起来：字体规范，按钮样式，图片大小格式，元素行间距等等，都是一个个固定，而没有用统一的CSS文件去限制，这是比较遗憾的地方。
+4. 上线前网站评估 网站做好之后分为4个部分进行上线前评估
+ 模板评估：每个页面包含必要SEO元素，tdk等 内容评估：确保业务相关资料完整，对应原始SEO资源, 尽量保存原有的Page Title, Meta Description, Heading, Copy, Internal Links, Alt on images。 内链结构：描述内链（导航）结构，尽量不深于原来的网站。3-4次点击深度最合适。 技术性检查：  爬虫隐蔽性问题 隐藏内容 JavaScript问题 移动版设置（AMP或者PWA） 结构化数据 重复页面，权威链接指正 分页 404自定义 图像alt文本 重定向检查  原有链接检查 无效链接301 内部链接跳转 网站版本检查 www vs non-www, http vs https 移动版链接跳转   网站地图 Robot.">
+
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://garysmap.com/posts/",
+          "name": "Posts",
+          "image": ""
+        }
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://garysmap.com/posts/6/",
+          "name": "网站迁移与SEO",
+          "image": ""
+        }
+      }
+    ]
+}
+</script>
+
+
+
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/local.css">
+</head>
+  <body>
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTPVGMK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">
+  <a class="text-decoration-none" href="https://garysmap.com/">GarysMap 营销笔记</a></h5>
+  <nav class="my-2 my-md-0 mr-md-3"></nav>
+</div>
+
+  <div class="py-5 text-center">
+    <h1>网站迁移与SEO</h1>
+  </div>
+
+
+    <div id="content">
+<div class="container" role="main">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+  
+
+    
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">
+      <a href="/"><i class="fa fa-home"></i></a>
+    </li>
+
+  <li class="breadcrumb-item">
+    <a href="/posts/"><small>Posts</small></a>
+  </li>
+  
+  <li class="breadcrumb-item active" aria-current="page">
+    <small>网站迁移与SEO</small>
+  </li>
+  
+  </ol>
+</nav>
+
+
+    </div>
+  </div>
+  <article>
+    <div class="row justify-content-center">
+      
+        <div class="col-lg-8">
+          <h2 id="目录">目录</h2>
+<ol>
+<li>网站迁移思路</li>
+<li>注意事项</li>
+<li>执行计划</li>
+<li>相关评估</li>
+<li>上线过程</li>
+<li>追踪效果</li>
+</ol>
+<h2 id="1-网站迁移思路">1. 网站迁移思路</h2>
+<p>来到一家新公司做SEO工作，对本公司网站进行审查之后，综合考虑决定放弃原有的公司网站，新开一坑，把网站重新建设一遍。
+主要考虑两个因素：</p>
+<ol>
+<li>
+<p>技术上：原来网站采用KingCMS框架，用的技术和php版本都比较老，有安全问题；另外后台管理非常麻烦，生成静态页面常常失败，也给不出问题原因，导致很多页面直接在静态模板上改动，无法在进行网站整体控制，难以管理。</p>
+</li>
+<li>
+<p>内容上：网站设计样式古朴，前端代码和样式不统一，无法做整体性修改，之前维护也没有备注说明，难以维护；SEO手法有点问题，很多重复，相似页面，内容过于简短。设计形式也不统一。业务端反馈网站上也有很多淘汰产品，因为网站管理复杂所以也不好及时下线，更新速度慢，容易出错。</p>
+</li>
+</ol>
+<p>基于目前情况，考虑公司SEO需求，决定采用新网站，改变管理难，更新难的情况，从基础结构上改变SEO的问题。难点在于梳理网站之前的资料，尽量保证之前的自然流量能被合理继承，不影响网站在搜索引擎的表现。</p>
+<h2 id="2-注意事项">2. 注意事项</h2>
+<ol>
+<li>
+<p>搜索引擎隐蔽性和旧网站域名的可访问性：</p>
+<p>因为要确保开发过程中网站也可以访问旧资源，所以没修改DNS域名解析。通过在新服务器上添加域名解析，并以修改HOST文件的方式在本地链接了起来。这样既能保证搜索引擎的隐蔽性，也能如同正常网站一样设置本地爬虫。方便排查问题并修改，最小化域名切换时出错的可能性。安装SSL, 尽量减少硬链接。</p>
+</li>
+<li>
+<p>SEO资源的继承：</p>
+<p>尽可能保留有用的排名，继承SEO效果。查看网站的Search Console，将排名点击靠前的页面url导出表格，针对这些资源做详尽的分析，尽量保留之前的URL和相应网站内容。如果URL有变动，则需要做好301链接，引导用户进入相似的页面，减少SEO资源浪费。</p>
+</li>
+</ol>
+<h2 id="3-执行计划">3. 执行计划</h2>
+<p>网站迁移，一方面是技术框架，一方面是内容，还有一方面是UX设计。从这三个方面抓好网站的修改主题，工作就不会遇到太大困难。</p>
+<p>需要注意的是：UX设计我们并不专业，即使设计出好看的网站框架，限于技术水平，技术上实现也比较有限。所以UX设计是我们网站建设的主要难点，很多次大的改版或者项目延期都是因为网站设计产生分歧。直到最后，基于网站的平台架构，修改小细节成为风格，才完成网站升级的任务。很多地方仍然没有统一起来：字体规范，按钮样式，图片大小格式，元素行间距等等，都是一个个固定，而没有用统一的CSS文件去限制，这是比较遗憾的地方。</p>
+<h2 id="4-上线前网站评估">4. 上线前网站评估</h2>
+<p>网站做好之后分为4个部分进行上线前评估</p>
+<ol>
+<li>模板评估：每个页面包含必要SEO元素，tdk等</li>
+<li>内容评估：确保业务相关资料完整，对应原始SEO资源, 尽量保存原有的Page Title, Meta Description, Heading, Copy, Internal Links, Alt on images。</li>
+<li>内链结构：描述内链（导航）结构，尽量不深于原来的网站。3-4次点击深度最合适。</li>
+<li>技术性检查：
+<ol>
+<li>爬虫隐蔽性问题</li>
+<li>隐藏内容</li>
+<li>JavaScript问题</li>
+<li>移动版设置（AMP或者PWA）</li>
+<li>结构化数据</li>
+<li>重复页面，权威链接指正</li>
+<li>分页</li>
+<li>404自定义</li>
+<li>图像alt文本</li>
+<li>重定向检查
+<ol>
+<li>原有链接检查</li>
+<li>无效链接301</li>
+<li>内部链接跳转</li>
+<li>网站版本检查 www vs non-www, http vs https</li>
+<li>移动版链接跳转</li>
+</ol>
+</li>
+<li>网站地图</li>
+<li>Robot.txt 文件设置</li>
+<li>Hreflang语言标记</li>
+<li>网站速度检查</li>
+</ol>
+</li>
+</ol>
+<p>如果采用HOSTS方式访问网站，以上大多数技术问题可以通过本地化爬虫解决。业务内容则需要人工审核。</p>
+<p>如果以上没有问题，则可以开始准备网站上线。</p>
+<h2 id="5-上线过程">5. 上线过程</h2>
+<p>这个过程主要考虑网站可连通性和业务持续性，让新网站顺利过渡。</p>
+<ol>
+<li>取消强制https:确定网站暂时支持http和https 两种协议，方便在切换后没有ssl的短暂时间内也可以访问。</li>
+<li>暂停Google ads 广告投放。</li>
+<li>切换！添加新解析记录，暂停原来的记录。</li>
+<li>不断用ping检验，等待解析记录生效，</li>
+<li>解析生效，安装ssl，测试https网址是否有了证书，有证书之后强制https访问。</li>
+<li>检查网站加载，没有大问题，开始安装跟踪代码。</li>
+<li>检查GA分析中出现的网址，有没有新网站的地址，有的话证明GA代码已经启动了。</li>
+<li>更改Google ads中的投放网址，点击原有网址，查看是否可以成功跳转，并更新最终到达网址。</li>
+<li>连接Google console，验证新网站，提交网站地图，更新Google console中的问题。</li>
+<li>设置缓存插件，启用缓存，检查CDN设置。</li>
+<li>用网站测速工具gtmetrix进行测速，查看网站加载是否有问题。</li>
+<li>检查网站跟踪中出现的原有url，进行301跳转更新</li>
+<li>检查网站事件跟踪，是否导入到Google Tag Manager，跟踪目标转化设置是否正常。</li>
+<li>网站备份，保证网站更新成功</li>
+</ol>
+<h2 id="6-效果跟踪">6. 效果跟踪</h2>
+<ol>
+<li>解决问题</li>
+</ol>
+<ul>
+<li>跟踪查找RankMath中的404页面，有价值的改重定向。</li>
+<li>跟踪谷歌Search Console中的收录报告，及时解决出现的问题。</li>
+</ul>
+<ol start="2">
+<li>效果跟踪</li>
+</ol>
+<ul>
+<li>关键字跟踪对比
+<ol>
+<li>品牌词</li>
+<li>头部和长尾词</li>
+<li>季节性变化词</li>
+<li>移动和桌面端变化</li>
+<li>国际地区性词变化</li>
+</ol>
+</li>
+<li>网站性能对比
+<ol>
+<li>自然引流会话数</li>
+<li>跳出率</li>
+<li>转化率</li>
+<li>利润</li>
+<li>广告投放着陆页得分</li>
+<li>网站速度</li>
+<li>总收录页面</li>
+</ol>
+</li>
+</ul>
+<p>目前网站已经上线，运行良好。</p>
+<h2 id="参考资料">参考资料</h2>
+<blockquote>
+<ul>
+<li><a href="https://moz.com/blog/website-migration-guide">https://moz.com/blog/website-migration-guide</a></li>
+<li><a href="https://moz.com/blog/no-such-thing-as-a-site-migration">https://moz.com/blog/no-such-thing-as-a-site-migration</a></li>
+</ul>
+</blockquote>
+
+          
+        </div>
+      
+    </div>
+    
+  </article>
+</div>
+
+    </div>  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1 small">&copy;
+      2020
+    </p>
+    <ul class="list-inline">
+    </ul>
+  </footer>
+
+
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PTPVGMK');</script>
+  
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <title>Google Analytics 细化数据采集和衡量方案(会更新) - GarysMap 营销笔记</title>
+    <meta name="description" content="利用Google Analytics内容分组对小型2B企业网站进行内容整合用户行为追踪
+ 意义：制作一个报告维度，从细分网站内容出发，从自己的业务角度来衡量追踪用户数据，呈现出更有意义的报告。 目录：  目前数据采集和衡量现状和不足（目前的不足） 为什么进行数据采集？衡量的意义在哪里？（数字营销的价值衡量） 选择市场营销指导方法和理论？（营销转化漏斗理论） 有了理论，如何结合现有内容和工具进行实践？（设定内容维度和指标） 会有什么样的结果？（具体化的方案在目前项目中） 不足和补充之处？（方案适用条件，上限下限）  目前的数据采集和衡量现状： 现在使用的是默认的GA数据报告，简单而言就是把跟踪代码插入到网站中，利用GA原生的维度和指标进行数据跟踪。目前来说，GA目标不明确，更没有针对自己的业务类型和目标进行定制化维度分析，所以在做数据整理时，出现了一些问题，总结如下：
+转化目标设置无过滤和验证，导致爬虫或者恶意垃圾询盘数量多和正常数据混在一起，计算花费不精准。（产生的询盘不能衡量价值，垃圾还是主要产品询盘无法从GA中统计） 转化目标多，但没有进行有效整理。网站表单填写和在线聊天客户跟踪数据维度和指标不明确，无法统一起来。（应该利用目标集） 原生数据维度和指标复杂而多样，大多数指标并不适用于公司业务类型。如月活用户，对于B端客户来说指导意义不大 网站内容没有分组，造成指标性数据说服力不够。如网站跳出率和页面停留时间，在博客页面和产品转化页面的客户行为非常不同，不考虑用户环境取平均数没有意义。 因为衡量角度的单一，只注重询盘数量，不知道优化过程，造成网站工作分配不均，产生业务短视。
+数据采集和衡量的意义： 基于上述不足，我们重新考虑一下，做数据采集和衡量的意义是什么？
+从结果导向来说，统计产品询盘，让询盘产出过程更清晰明白 从费用来说，了解费用的花费，以及各内容项目的成本，计算ROI 从市场来说，通过网站询盘和网站内容的流量以及相对转化难度对比，了解市场变化，了解公司优势 从消费者角度，通过多角度追逐消费者行为，更加了解和明白用户的兴趣转化，提高用户的互动深度 从业务建设来说，了解自己的市场工具以及转化能力，做市场做的更明白和透彻
+市场营销转化的理论工具：转化漏斗模型 首先上Marketing Funnel：（从逻辑上讲，这个Funnel应该是针对自己业务类型定制打造，但为了节省时间，我们先使用一般化的Funnel进行演示。）
+Image result for marketing funnel
+如何进行实践？ 网站按转化距离组织内容（1业务角度） 一般话的B端网站内容基本可以组织为下面几个内容部分：
+Awareness的不同维度，我们我们只要通过SEO和ADS广告来进行吸引客户。当然其他渠道也要有效的识别出来，例如社交引流，视频YOUTUBE，还有EDM营销（）。
+Interest阶段，这个阶段一般来说用户主要是在网站上进行的。用户在网站上的行为也基本上暗示着用户的价值程度。例如访问博客页面的用户和产品详细参数页面的用户所处的转化距离是有很大差别的。在这个时候，就需要对网站内容进行分类处理价值权重了。目前我的业务网站基本可以分为：1. 重要产品页面 2. 博客页面 3. 促销页面 4. 辅助产品页面（客户案例 – 产品细节 – 使用说明 – 保修条款 – 运输 – 技术文档等等）5. 导航联系我们（比较特殊，一般产品网页上都会有联系途径，当客户仍然选择从首页导航上选择联系我们时，我觉得转化率应该会有差异，也可能会包含售后等，大胆预测转化率可能会比较高一些。）
+因为这些内容价值和用户所处转化阶段的不同，我们需要设定不同的Tag标记用户，或者把页面设定出不同的价值，根据用户量或者用户行为进行价值计算。
+Evaluation 阶段和Interest阶段在B端表现我觉得没有太大差异，或者说上面Interest已经包含了一部分Evaluation的行为。如果是C端的话，最终转化为购买付款，那么Evaluation可以是客户进行深度互动（如产品比较，加入购物车，或者与网站客户进行沟通）。但是B端转化一般设置为询盘产出，客户一旦有深度的互动本身意味着网站的目标转化已经完成，所以在此不做维度和指标设计。
+Commitment在B端可以理解为询盘转化，有广告和垃圾询盘，需要用验证码等手段剔除。但如果太麻烦的话可能也会影响一定的转化率。
+sale最终为询盘到位。可以根据不同的询盘转化利润进行价值计算（学习利用adwords的定价方法）
+利用Google Analytics 细分内容维度和指标（2技术操作）： GA自身跟踪维度包括了来源和维度，现在需要增加的只是对内容进行分类主题统一，方便衡量不同内容的价值。
+操作视频链接
+会产出什么样的报表？ 和原来的报表相比，新的报表增加了产品和博客内容维度，并可以依据流量来源进行陈本核算。">
+
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://garysmap.com/posts/",
+          "name": "Posts",
+          "image": ""
+        }
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://garysmap.com/posts/3/",
+          "name": "Google Analytics 细化数据采集和衡量方案(会更新)",
+          "image": ""
+        }
+      }
+    ]
+}
+</script>
+
+
+
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/local.css">
+</head>
+  <body>
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTPVGMK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">
+  <a class="text-decoration-none" href="https://garysmap.com/">GarysMap 营销笔记</a></h5>
+  <nav class="my-2 my-md-0 mr-md-3"></nav>
+</div>
+
+  <div class="py-5 text-center">
+    <h1>Google Analytics 细化数据采集和衡量方案(会更新)</h1>
+  </div>
+
+
+    <div id="content">
+<div class="container" role="main">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+  
+
+    
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">
+      <a href="/"><i class="fa fa-home"></i></a>
+    </li>
+
+  <li class="breadcrumb-item">
+    <a href="/posts/"><small>Posts</small></a>
+  </li>
+  
+  <li class="breadcrumb-item active" aria-current="page">
+    <small>Google Analytics 细化数据采集和衡量方案(会更新)</small>
+  </li>
+  
+  </ol>
+</nav>
+
+
+    </div>
+  </div>
+  <article>
+    <div class="row justify-content-center">
+      
+        <div class="col-lg-8">
+          <blockquote>
+<p>利用Google Analytics内容分组对小型2B企业网站进行内容整合用户行为追踪</p>
+</blockquote>
+<h4 id="意义制作一个报告维度从细分网站内容出发从自己的业务角度来衡量追踪用户数据呈现出更有意义的报告">意义：制作一个报告维度，从细分网站内容出发，从自己的业务角度来衡量追踪用户数据，呈现出更有意义的报告。</h4>
+<h2 id="目录">目录：</h2>
+<ol>
+<li>目前数据采集和衡量现状和不足（目前的不足）</li>
+<li>为什么进行数据采集？衡量的意义在哪里？（数字营销的价值衡量）</li>
+<li>选择市场营销指导方法和理论？（营销转化漏斗理论）</li>
+<li>有了理论，如何结合现有内容和工具进行实践？（设定内容维度和指标）</li>
+<li>会有什么样的结果？（具体化的方案在目前项目中）</li>
+<li>不足和补充之处？（方案适用条件，上限下限）</li>
+</ol>
+<h3 id="目前的数据采集和衡量现状">目前的数据采集和衡量现状：</h3>
+<p>现在使用的是默认的GA数据报告，简单而言就是把跟踪代码插入到网站中，利用GA原生的维度和指标进行数据跟踪。目前来说，GA目标不明确，更没有针对自己的业务类型和目标进行定制化维度分析，所以在做数据整理时，出现了一些问题，总结如下：</p>
+<p>转化目标设置无过滤和验证，导致爬虫或者恶意垃圾询盘数量多和正常数据混在一起，计算花费不精准。（产生的询盘不能衡量价值，垃圾还是主要产品询盘无法从GA中统计）
+转化目标多，但没有进行有效整理。网站表单填写和在线聊天客户跟踪数据维度和指标不明确，无法统一起来。（应该利用目标集）
+原生数据维度和指标复杂而多样，大多数指标并不适用于公司业务类型。如月活用户，对于B端客户来说指导意义不大
+网站内容没有分组，造成指标性数据说服力不够。如网站跳出率和页面停留时间，在博客页面和产品转化页面的客户行为非常不同，不考虑用户环境取平均数没有意义。
+因为衡量角度的单一，只注重询盘数量，不知道优化过程，造成网站工作分配不均，产生业务短视。</p>
+<h3 id="数据采集和衡量的意义">数据采集和衡量的意义：</h3>
+<p>基于上述不足，我们重新考虑一下，做数据采集和衡量的意义是什么？</p>
+<p>从结果导向来说，统计产品询盘，让询盘产出过程更清晰明白
+从费用来说，了解费用的花费，以及各内容项目的成本，计算ROI
+从市场来说，通过网站询盘和网站内容的流量以及相对转化难度对比，了解市场变化，了解公司优势
+从消费者角度，通过多角度追逐消费者行为，更加了解和明白用户的兴趣转化，提高用户的互动深度
+从业务建设来说，了解自己的市场工具以及转化能力，做市场做的更明白和透彻</p>
+<h3 id="市场营销转化的理论工具转化漏斗模型">市场营销转化的理论工具：转化漏斗模型</h3>
+<p>首先上Marketing Funnel：（从逻辑上讲，这个Funnel应该是针对自己业务类型定制打造，但为了节省时间，我们先使用一般化的Funnel进行演示。）</p>
+<p>Image result for marketing funnel</p>
+<h3 id="如何进行实践">如何进行实践？</h3>
+<p>网站按转化距离组织内容（1业务角度）
+一般话的B端网站内容基本可以组织为下面几个内容部分：</p>
+<p>Awareness的不同维度，我们我们只要通过SEO和ADS广告来进行吸引客户。当然其他渠道也要有效的识别出来，例如社交引流，视频YOUTUBE，还有EDM营销（）。</p>
+<p>Interest阶段，这个阶段一般来说用户主要是在网站上进行的。用户在网站上的行为也基本上暗示着用户的价值程度。例如访问博客页面的用户和产品详细参数页面的用户所处的转化距离是有很大差别的。在这个时候，就需要对网站内容进行分类处理价值权重了。目前我的业务网站基本可以分为：1. 重要产品页面 2. 博客页面 3. 促销页面 4. 辅助产品页面（客户案例 – 产品细节 – 使用说明 – 保修条款 – 运输 – 技术文档等等）5. 导航联系我们（比较特殊，一般产品网页上都会有联系途径，当客户仍然选择从首页导航上选择联系我们时，我觉得转化率应该会有差异，也可能会包含售后等，大胆预测转化率可能会比较高一些。）</p>
+<p>因为这些内容价值和用户所处转化阶段的不同，我们需要设定不同的Tag标记用户，或者把页面设定出不同的价值，根据用户量或者用户行为进行价值计算。</p>
+<p>Evaluation 阶段和Interest阶段在B端表现我觉得没有太大差异，或者说上面Interest已经包含了一部分Evaluation的行为。如果是C端的话，最终转化为购买付款，那么Evaluation可以是客户进行深度互动（如产品比较，加入购物车，或者与网站客户进行沟通）。但是B端转化一般设置为询盘产出，客户一旦有深度的互动本身意味着网站的目标转化已经完成，所以在此不做维度和指标设计。</p>
+<p>Commitment在B端可以理解为询盘转化，有广告和垃圾询盘，需要用验证码等手段剔除。但如果太麻烦的话可能也会影响一定的转化率。</p>
+<p>sale最终为询盘到位。可以根据不同的询盘转化利润进行价值计算（学习利用adwords的定价方法）</p>
+<p>利用Google Analytics 细分内容维度和指标（2技术操作）：
+GA自身跟踪维度包括了来源和维度，现在需要增加的只是对内容进行分类主题统一，方便衡量不同内容的价值。</p>
+<p>操作视频链接</p>
+<h3 id="会产出什么样的报表">会产出什么样的报表？</h3>
+<p>和原来的报表相比，新的报表增加了产品和博客内容维度，并可以依据流量来源进行陈本核算。</p>
+<p>举例： 产品A的用户来源渠道数量对比，产品B的平均用户访问量和时长；博客内容的页面停留时间，跳转率，产品浏览贡献；也可以按照这些新角度来区分活跃用户人群，比如说最近关注产品A的人数在上升，关注B产品的人数在下降，但是从整体上看用户数量可能是没有变化的：这些都是GA原始数据所不能体现的业务角度价值。</p>
+<p>利用产品的角度，更有针对性的制作优化和产品相关的内容。而博客内容的互动和用户行为记录也能衡量出博客内容的价值，让内容创作者有迹可循，明白自己的产出和不足。</p>
+<h3 id="这套评估和跟踪方案的适用范围应用场景">这套评估和跟踪方案的适用范围？（应用场景）</h3>
+<p>目前就我的用途而言，在小型2B企业，多主打产品，无线上订单，需要内容填充做SEO和营销来说已经足够。能方便的针对不同的产品进行成本核算，也能有效的区分GOOGLE ADS广告花费。在进行有目的有指向的定位营销Marketing时，也不会显得手忙脚乱。</p>
+<p>不足之处：目前只是针对内容进行分类，目标转化暂时还没有分类统计。比如说在线聊天转化无法跟踪出产品数据整合到GA中；目标转化产品暂时也也没有好的方法或技术手端区分不同的转化产品（自身技术原因）。这个还是希望可以通过谷歌代码工具（GA tagmanager）进行跟踪区分的。</p>
+<p>不适用的条件：内容主题比较多的大型网站，可能分类起来比较麻烦；电子商务网站可以利用（增强型电子商务）直接将营业数据导入GA数据中，更方便计算花费和归因。</p>
+
+          
+        </div>
+      
+    </div>
+    
+  </article>
+</div>
+
+    </div>  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1 small">&copy;
+      2020
+    </p>
+    <ul class="list-inline">
+    </ul>
+  </footer>
+
+
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>

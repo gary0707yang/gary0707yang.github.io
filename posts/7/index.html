@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PTPVGMK');</script>
+  
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+    <title>SiteGround速度优化 -&gt; Wordpress - GarysMap 营销笔记</title>
+    <meta name="description" content="前提：因为采用了wordpress建站，页面建构工具使用的elementor。可视化的操作虽然提高了速度，但是也造成了很多代码冗余。网站js太多，加载速度太慢。为此启动了sg的优化。现在记录一下，方便后来的设置。
+网站速度理论基础 网站打开速度和哪些因素相关呢？我们知道网站速度会影响实际的客户体验，同时也会影响谷歌自然搜索的排名，以及谷歌SEM中的着陆页体验和竞价。我们迫不及待的希望优化网站速度，那么速度究竟和哪些因素相关呢？ 用户在浏览器输入网址点击回车的之后，域名首先经过解析，对映成IP地址，然后浏览器向服务器发送访问请求，下载网页内容。服务器端根据浏览器的请求地址，准备页面资源和数据，返回给用户浏览器。浏览器再把数据渲染成丰富的网站页面，供用户观看。 从其中的描述中可以大致看出几个影响网站速度的因素。
+ 域名解析时间 服务器的性能 服务器和用户浏览器的网络距离 用户浏览器的性能。 针对以上几个步骤，采取的主要方式为 选择合适的DNS解释服务商 提供缓存，增加静态页面，减少后端语言处理时间；提高服务器性能。 选择和实际用户接近的服务器；使用CDN服务 减少页面大小，减少js。  下面就是我们的具体操作步骤。
+三个设置选项 Wordpress 插件 Sg给wordpress配置了优秀的加速插件。叫做SGOptimizer。这里我们可以生成缓存，静态文件来帮助网站提高速度。
+SG后台 SG的后台也有很多优化的选项，其中大部分已经在Wordpress插件中设置过了。但也有一个是必须在这里开启的，就是phpmemcache功能。这个功能对提速非常有帮助。
+连接免费CDN平台 SG和Cloudflare集成的非常深入，只要你有cloudflare的账户，在SG后台登陆之后就可以直接管理。 cf的免费账户很容易开通，然后设置dns解析，等解析生效，确认网站没有故障基本就完成了操作。
+配置 不得不说，Siteground的新面板虽然反应速度慢，但却是极大的加速了用户的工作流程。一开始还惦记Cpanel的好处，但花了半小时时间认真研究了一下新面板，马上加入了真香队伍。大部分网站管理功能在左侧清晰可见，两三次点击就能到达目的地。
+效果 前两个缓存设置都比较成功，可以明显的感觉到网站速度的提升。
+但CDN因为线路的问题，在本地打开速度变得非常慢，而且容易出现故障。最后决定去掉了CF的CDN服务，没有感觉到太大的变化。">
+
+
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://garysmap.com/posts/",
+          "name": "Posts",
+          "image": ""
+        }
+      },
+
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://garysmap.com/posts/7/",
+          "name": "SiteGround速度优化 -> Wordpress",
+          "image": ""
+        }
+      }
+    ]
+}
+</script>
+
+
+
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/local.css">
+</head>
+  <body>
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PTPVGMK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">
+  <a class="text-decoration-none" href="https://garysmap.com/">GarysMap 营销笔记</a></h5>
+  <nav class="my-2 my-md-0 mr-md-3"></nav>
+</div>
+
+  <div class="py-5 text-center">
+    <h1>SiteGround速度优化 -&gt; Wordpress</h1>
+  </div>
+
+
+    <div id="content">
+<div class="container" role="main">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+  
+
+    
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">
+      <a href="/"><i class="fa fa-home"></i></a>
+    </li>
+
+  <li class="breadcrumb-item">
+    <a href="/posts/"><small>Posts</small></a>
+  </li>
+  
+  <li class="breadcrumb-item active" aria-current="page">
+    <small>SiteGround速度优化 -> Wordpress</small>
+  </li>
+  
+  </ol>
+</nav>
+
+
+    </div>
+  </div>
+  <article>
+    <div class="row justify-content-center">
+      
+        <div class="col-lg-8">
+          <p>前提：因为采用了wordpress建站，页面建构工具使用的elementor。可视化的操作虽然提高了速度，但是也造成了很多代码冗余。网站js太多，加载速度太慢。为此启动了sg的优化。现在记录一下，方便后来的设置。</p>
+<h2 id="网站速度理论基础">网站速度理论基础</h2>
+<p>网站打开速度和哪些因素相关呢？我们知道网站速度会影响实际的客户体验，同时也会影响谷歌自然搜索的排名，以及谷歌SEM中的着陆页体验和竞价。我们迫不及待的希望优化网站速度，那么速度究竟和哪些因素相关呢？
+用户在浏览器输入网址点击回车的之后，域名首先经过解析，对映成IP地址，然后浏览器向服务器发送访问请求，下载网页内容。服务器端根据浏览器的请求地址，准备页面资源和数据，返回给用户浏览器。浏览器再把数据渲染成丰富的网站页面，供用户观看。
+从其中的描述中可以大致看出几个影响网站速度的因素。</p>
+<ol>
+<li>域名解析时间</li>
+<li>服务器的性能</li>
+<li>服务器和用户浏览器的网络距离</li>
+<li>用户浏览器的性能。
+针对以上几个步骤，采取的主要方式为</li>
+<li>选择合适的DNS解释服务商</li>
+<li>提供缓存，增加静态页面，减少后端语言处理时间；提高服务器性能。</li>
+<li>选择和实际用户接近的服务器；使用CDN服务</li>
+<li>减少页面大小，减少js。</li>
+</ol>
+<p>下面就是我们的具体操作步骤。</p>
+<h2 id="三个设置选项">三个设置选项</h2>
+<h3 id="wordpress-插件">Wordpress 插件</h3>
+<p>Sg给wordpress配置了优秀的加速插件。叫做SGOptimizer。这里我们可以生成缓存，静态文件来帮助网站提高速度。</p>
+<h3 id="sg后台">SG后台</h3>
+<p>SG的后台也有很多优化的选项，其中大部分已经在Wordpress插件中设置过了。但也有一个是必须在这里开启的，就是phpmemcache功能。这个功能对提速非常有帮助。</p>
+<h3 id="连接免费cdn平台">连接免费CDN平台</h3>
+<p>SG和Cloudflare集成的非常深入，只要你有cloudflare的账户，在SG后台登陆之后就可以直接管理。
+cf的免费账户很容易开通，然后设置dns解析，等解析生效，确认网站没有故障基本就完成了操作。</p>
+<h2 id="配置">配置</h2>
+<p>不得不说，Siteground的新面板虽然反应速度慢，但却是极大的加速了用户的工作流程。一开始还惦记Cpanel的好处，但花了半小时时间认真研究了一下新面板，马上加入了真香队伍。大部分网站管理功能在左侧清晰可见，两三次点击就能到达目的地。</p>
+<h2 id="效果">效果</h2>
+<p>前两个缓存设置都比较成功，可以明显的感觉到网站速度的提升。</p>
+<p>但CDN因为线路的问题，在本地打开速度变得非常慢，而且容易出现故障。最后决定去掉了CF的CDN服务，没有感觉到太大的变化。</p>
+
+          
+        </div>
+      
+    </div>
+    
+  </article>
+</div>
+
+    </div>  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1 small">&copy;
+      2020
+    </p>
+    <ul class="list-inline">
+    </ul>
+  </footer>
+
+
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
