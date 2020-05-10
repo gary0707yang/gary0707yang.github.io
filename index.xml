@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>网站迁移与SEO</title>
+      <title>网站迁移（改版）与SEO</title>
       <link>https://garysmap.com/posts/6/</link>
       <pubDate>Wed, 05 Jun 2019 18:23:20 +0800</pubDate>
       
@@ -44,7 +44,7 @@
       <pubDate>Sat, 18 May 2019 18:23:20 +0800</pubDate>
       
       <guid>https://garysmap.com/posts/5/</guid>
-      <description>网站用户的基本单位时人，在收集以人为中心的用户数据时，根据互动的不同，主要分为两个方面： （非互动）用户属性数据：如用户浏览器语言，地理位置等等 （互动）网站交互数据：如浏览时长，浏览页数，访问频率，最近一次访问时间。 通过对这两种用户数据的挖掘和分析，研究用户的需求和潜在价值，促进用户的转化，是网站用户</description>
+      <description>素材： 《网站分析实战》 用户数据分析的基本逻辑 网站用户的基本单位时人，在收集以人为中心的用户数据时，根据数据来源的不同，主要分为三个方面： （人口特征）用户属性数据：如用户浏览器语言，地理位置等等 （大数据匹配）用户兴趣特征：谷歌和facebook都会有用户的兴趣爱好报告和分层，利用他们可以做好用户筛选。</description>
     </item>
     
     <item>
@@ -81,6 +81,15 @@
       
       <guid>https://garysmap.com/posts/1/</guid>
       <description>昨天（2019年2月13日）Moz和SEOjourneyland 都推了一篇关于关键词用户用户意图的文章，即通过转化漏斗距离对关键词所代表的用户意图进行分类，然后组织内容，对用户群体进行细分。另外通过测试四种不同意图的管检测，查看谷歌SERP页面的表现，显示出谷歌对不同的用户意图也有了不同的内容偏向。</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://garysmap.com/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://garysmap.com/pages/about/</guid>
+      <description>努力搬运分享一点数字营销的技巧方案 目前主题： Google Analytics 使用和分析方法 GTM 管理方案 数字营销理论和方法收集【杂】 网站优化 收藏其他好玩的东西 希望能有所收获吧</description>
     </item>
     
   </channel>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on GarysMap 营销笔记</title>
+    <link>https://garysmap.com/pages/</link>
+    <description>Recent content in Pages on GarysMap 营销笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="https://garysmap.com/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://garysmap.com/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://garysmap.com/pages/about/</guid>
+      <description>努力搬运分享一点数字营销的技巧方案 目前主题： Google Analytics 使用和分析方法 GTM 管理方案 数字营销理论和方法收集【杂】 网站优化 收藏其他好玩的东西 希望能有所收获吧</description>
+    </item>
+    
+  </channel>
+</rss>
