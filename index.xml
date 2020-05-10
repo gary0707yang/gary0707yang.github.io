@@ -17,18 +17,52 @@
       <pubDate>Thu, 07 May 2020 19:01:05 +0800</pubDate>
       
       <guid>https://garysmap.com/posts/%E8%BD%AC%E8%BD%BDga%E7%9B%AE%E6%A0%87%E6%B8%A0%E9%81%93%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
-      <description>原始链接： Jeffshow.com: 如何在GA 中使用转化漏斗功能
- 一、引言 很多网站都有引导用户发生转化的相对固定的路径，比如电商类网站的首页 - 产品页 - 加入购物车 - 结算 - 下单完成，这样的路径我们称之为转化路径。经验表明，进入了转化路径的用户，在各个转化节点上会存在不同程度的流失，如果用图表来说明从前一步到达后一步的数据，大致会呈现一个漏斗形状。如果我们能知道用户在转化路径上各个节点的流失情况，那么我们便可以针对性地对转化路径进行优化，从而提高转化率。
-二、转化漏斗的设置 在GA 中，转化漏斗功能位于转化 - 目标 -渠道可视化 这里，GA 英文版中这一功能被称为Funnel Visualization，即漏斗的可视化。要想在这里看到转化漏斗的数据，必须先在目标那里设置好。目标的设置位于管理 - 查看 - 目标，要想使用转化漏斗功能，必须要启用目标设置中的渠道，一个设置demo如下图所示：
-这里需要注意的有三点：
-1）只有目标网址类型的目标才支持渠道的设置，即才支持转化漏斗功能；
-2）渠道中各个步骤的url 匹配规则总是和目标网址那里选定的规则一致，比如，如果目标网址那里你选用的是正则表达式的规则匹配，那么步骤的url 记得也要使用正则表达式来写；
-3）步骤1 后边的能否跳过这个选项会决定最终参与转化漏斗计算的数据，默认是否，即可跳过，如果你选择了是，那么只有当一次访问当中真的经过了步骤1，才能算作真正的进入了转化漏斗，才能参与转化漏斗数据的计算。
-三、转化漏斗的报告 在GA 中转化漏斗报告位于渠道可视化，为了方便说明，以下一律使用渠道可视化来表述。渠道可视化报表主要分为两部分，上半部分是目标的转化率和目标转化率的折线图，下半部分即是转化漏斗图。我们这里主要关注转化漏斗图，一个典型的转化漏斗图如下所示：
-转化漏斗又可分为三个部分，左边是渠道进入点，表示的是用户在进入转化渠道前浏览的那个页面，如果着陆页即为转化渠道中的页面，那么渠道进入点显示为(entrance)，渠道进入点最多展示top 5页面的数据，绿色小三角即表示进入渠道；中间为转化漏斗，清楚地表示了用户在各个转化节点的流失数据，转化节点间流失的百分比数据不仅体现在条形中绿色和红色的占比，也体现在转化节点间漏斗的大小；最右边部分即为渠道退出点，展示了用户从转化渠道退出后去向了哪些页面，如果渠道中某步骤的有效的浏览即为退出页面，那么渠道退出点将以(exit)表示。
-四、转化漏斗数据计算的规则 渠道可视化中数据的计算比较复杂，要理解这里边数据的计算逻辑，首先需要理解渠道进入点和渠道退出点这两个维度。
-为了方便说明，我们假设用户设定的目标页面为Goal，各转化节点为Step1 -&amp;gt; Step2 -&amp;gt; Step3 -&amp;gt; Step4 ，我们看到，这四个步骤的Step Number 依次递增。
- 渠道进入点和渠道退出点  渠道进入点表示的是一次session 中首次匹配到转化渠道页面时的前一个页面，之前已经说到，如果渠道页面即为着陆页，那么渠道进入点为(entrance)。这里需要特别注意的是，渠道进入点总是被分配给当前session 中Step Number 最小的那个。比如，一次用户的浏览为：entrance -&amp;gt; Other1 -&amp;gt; Step2 -&amp;gt; Step1 -&amp;gt; Step3 -&amp;gt; exit，在渠道可视化报告中，渠道进入点为Other1，将展示在Step1 的左边，而不是在Step 2的左边。</description>
+      <description>原始链接： Jeffshow.com: 如何在GA 中使用转化漏斗功能 一、引言 很多网站都有引导用户发生转化的相对固定的路径，比如电商类网站的首页 - 产品页 - 加入购物车 - 结算 - 下单完成，这样的路径我们称之为转化路径。经验表明，进入了转化路径的用户，在各个转化节点上会存在不同程度的流失，如果用图表来说明从前一步到达后一步的数据，大致会</description>
+    </item>
+    
+    <item>
+      <title>SiteGround速度优化 -&gt; Wordpress</title>
+      <link>https://garysmap.com/posts/7/</link>
+      <pubDate>Tue, 30 Jul 2019 18:23:20 +0800</pubDate>
+      
+      <guid>https://garysmap.com/posts/7/</guid>
+      <description>前提：因为采用了wordpress建站，页面建构工具使用的elementor。可视化的操作虽然提高了速度，但是也造成了很多代码冗余。网站js太多，加载速度太慢。为此启动了sg的优化。现在记录一下，方便后来的设置。 网站速度理论基础 网站打开速度和哪些因素相关呢？我们知道网站速度会影响实际的客户体验，同时</description>
+    </item>
+    
+    <item>
+      <title>网站迁移与SEO</title>
+      <link>https://garysmap.com/posts/6/</link>
+      <pubDate>Wed, 05 Jun 2019 18:23:20 +0800</pubDate>
+      
+      <guid>https://garysmap.com/posts/6/</guid>
+      <description>目录 网站迁移思路 注意事项 执行计划 相关评估 上线过程 追踪效果 1. 网站迁移思路 来到一家新公司做SEO工作，对本公司网站进行审查之后，综合考虑决定放弃原有的公司网站，新开一坑，把网站重新建设一遍。 主要考虑两个因素： 技术上：原来网站采用KingCMS框架，用的技术和php版本都比较老，有安全问题；另外后台管理非</description>
+    </item>
+    
+    <item>
+      <title>网站用户价值分析</title>
+      <link>https://garysmap.com/posts/5/</link>
+      <pubDate>Sat, 18 May 2019 18:23:20 +0800</pubDate>
+      
+      <guid>https://garysmap.com/posts/5/</guid>
+      <description>网站用户的基本单位时人，在收集以人为中心的用户数据时，根据互动的不同，主要分为两个方面： （非互动）用户属性数据：如用户浏览器语言，地理位置等等 （互动）网站交互数据：如浏览时长，浏览页数，访问频率，最近一次访问时间。 通过对这两种用户数据的挖掘和分析，研究用户的需求和潜在价值，促进用户的转化，是网站用户</description>
+    </item>
+    
+    <item>
+      <title>2019外贸独立站聊天神器推荐—Tidiochat</title>
+      <link>https://garysmap.com/posts/4/</link>
+      <pubDate>Mon, 22 Apr 2019 18:23:20 +0800</pubDate>
+      
+      <guid>https://garysmap.com/posts/4/</guid>
+      <description>简介 随着外贸独立站的热度升高，很多人需要用到网站在线聊天功能。比起邮件和打电话来，网站在线沟通没有口语要求，也能方便快捷的与客户沟通，获得客户邮件之后还能后续跟进。这对于外贸业务人员是非常合适的。 但是由于我们的母语背景，和中文网络环境对在线聊天功能的不重视，我见过很多外贸网站的聊天工具中文风格明显，</description>
+    </item>
+    
+    <item>
+      <title>Google Analytics 细化数据采集和衡量方案(会更新)</title>
+      <link>https://garysmap.com/posts/3/</link>
+      <pubDate>Fri, 08 Mar 2019 18:23:20 +0800</pubDate>
+      
+      <guid>https://garysmap.com/posts/3/</guid>
+      <description>利用Google Analytics内容分组对小型2B企业网站进行内容整合用户行为追踪 意义：制作一个报告维度，从细分网站内容出发，从自己的业务角度来衡量追踪用户数据，呈现出更有意义的报告。 目录： 目前数据采集和衡量现状和不足（目前的不足） 为什么进行数据采集？衡量的意义在哪里？（数字营销的价值衡量） 选择市</description>
     </item>
     
     <item>
@@ -37,11 +71,16 @@
       <pubDate>Mon, 04 Feb 2019 18:23:20 +0800</pubDate>
       
       <guid>https://garysmap.com/posts/2/</guid>
-      <description>美国营销协会的一篇文章，列出了以下几个数字营销的网络课程，基本概括了数字营销的全貌：
-  Metrics &amp;amp; Conversions 指标与转化 Social &amp;amp; Community 社交与社群 Email Marketing 邮件营销 User Interface &amp;amp; Experience 用户交互与体验 Online Advertising 在线广告 SEO 搜索引擎优化 Content Marketing 内容营销  详细内容：
-指标与转化： 课程包括Common KPIs, Google Analytics, Attribution Analysis, ROI Analysis, A/B Testing, Facebook Insights, Twitter Analytics, and Payment Metrics. 大多是从评测和衡量角度去审查数字营销的效果。像常见的考核标准，分析工具，归因分析，投资回报率分析，A/B测试，Facebook Insights社交分析，Twitter分析，付费指标。
-课程列表：
- Online Marketing Foundations (3h 45min) Learning Conversion Rate Optimization (1h 30min) Google Analytics Essential Training (3h 45min) Advanced Google Analytics (3h 46min)  社交与社群： 学习如何提高社交曝光度，创作运营策略和有吸引力的内容，理解品牌意识，衡量社交利润点。话题包括Content Marketing, Facebook, Twitter, LinkedIn, Instagram, Pinterest &amp;amp; Snapchat, YouTube, Social Content, Influencer Strategies, Brand Reputation, Blogging, Crisis &amp;amp; Community, Social Employees, and Viral Marketing.</description>
+      <description>美国营销协会的一篇文章，列出了以下几个数字营销的网络课程，基本概括了数字营销的全貌： Metrics &amp;amp; Conversions 指标与转化 Social &amp;amp; Community 社交与社群 Email Marketing 邮件营销 User Interface &amp;amp; Experience 用户交互与体验 Online Advertising 在线广告 SEO 搜索引擎优化 Content Marketing 内容营销 详细内容： 指标与转化： 课程包括Common KPIs, Google Analytics, Attribution Analysis, ROI Analysis, A/B Testing, Facebook Insights, Twitter Analytics, and Payment Metrics. 大多是从评测和衡量角度去审查数字营销的</description>
+    </item>
+    
+    <item>
+      <title>关于用户意图分类的关键字研究和实践步骤</title>
+      <link>https://garysmap.com/posts/1/</link>
+      <pubDate>Tue, 04 Dec 2018 18:23:20 +0800</pubDate>
+      
+      <guid>https://garysmap.com/posts/1/</guid>
+      <description>昨天（2019年2月13日）Moz和SEOjourneyland 都推了一篇关于关键词用户用户意图的文章，即通过转化漏斗距离对关键词所代表的用户意图进行分类，然后组织内容，对用户群体进行细分。另外通过测试四种不同意图的管检测，查看谷歌SERP页面的表现，显示出谷歌对不同的用户意图也有了不同的内容偏向。</description>
     </item>
     
   </channel>
