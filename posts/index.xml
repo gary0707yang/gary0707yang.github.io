@@ -6,10 +6,28 @@
     <description>Recent content in Posts on GarysMap 营销笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 07 May 2020 19:01:05 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 Jan 2021 19:01:05 +0800</lastBuildDate>
     
 	<atom:link href="https://garysmap.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MOZ SEO初学者指南 - 排名第一的权威指南</title>
+      <link>https://garysmap.com/posts/moz-seo-beginner-tutorial-0/</link>
+      <pubDate>Fri, 08 Jan 2021 19:01:05 +0800</pubDate>
+      
+      <guid>https://garysmap.com/posts/moz-seo-beginner-tutorial-0/</guid>
+      <description>SEO入门指南 排名第一的seo初学者教材，来自MOZ创始人Rand Fishkin，原文https://moz.com/beginners-guide-to-seo 引言 欢迎来到您的SEO学习之旅！ 如果您想通过执行和测试概念来学习搜索引擎优化（SEO），那么您就是本指南的读者。 本指南旨在描述SEO的方方</description>
+    </item>
+    
+    <item>
+      <title>利用GA hit builder跟踪邮件打开</title>
+      <link>https://garysmap.com/posts/email-ga-tracking/</link>
+      <pubDate>Sat, 28 Nov 2020 21:19:21 +0800</pubDate>
+      
+      <guid>https://garysmap.com/posts/email-ga-tracking/</guid>
+      <description>邮件里的GA跟踪 方式：Html格式的邮件会自动请求文件中包含的img标签，利用img标签的地址和GA的hit关联起来，从而监控邮件的打开次数和时间，以及hit payload 中所包含的信息，并显示在GA的面板里。 优势：可以把邮件打开看作是GA的event，利用统一的USER ID分析用户的邮件和网站行为，在同一个视</description>
+    </item>
     
     <item>
       <title>[转载]如何在GA 中使用转化漏斗功能</title>

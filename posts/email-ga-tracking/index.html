@@ -14,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 
-    <title>SiteGround速度优化 -&gt; Wordpress - GarysMap 营销笔记</title>
-    <meta name="description" content="前提：因为采用了wordpress建站，页面建构工具使用的elementor。可视化的操作虽然提高了速度，但是也造成了很多代码冗余。网站js太多，加载速度太慢。为此启动了sg的优化。现在记录一下，方便后来的设置。 网站速度理论基础 网站打开速度和哪些因素相关呢？我们知道网站速度会影响实际的客户体验，同时">
+    <title>利用GA hit builder跟踪邮件打开 - GarysMap 营销笔记</title>
+    <meta name="description" content="邮件里的GA跟踪 方式：Html格式的邮件会自动请求文件中包含的img标签，利用img标签的地址和GA的hit关联起来，从而监控邮件的打开次数和时间，以及hit payload 中所包含的信息，并显示在GA的面板里。 优势：可以把邮件打开看作是GA的event，利用统一的USER ID分析用户的邮件和网站行为，在同一个视">
 
 
     
@@ -39,8 +39,8 @@
         "@type": "ListItem",
         "position": 2,
         "item": {
-          "@id": "https://garysmap.com/posts/7/",
-          "name": "SiteGround速度优化 -> Wordpress",
+          "@id": "https://garysmap.com/posts/email-ga-tracking/",
+          "name": "利用GA hit builder跟踪邮件打开",
           "image": ""
         }
       }
@@ -70,7 +70,7 @@
 </div>
 
   <div class="py-5 text-center">
-    <h1>SiteGround速度优化 -&gt; Wordpress</h1>
+    <h1>利用GA hit builder跟踪邮件打开</h1>
   </div>
 
 
@@ -92,7 +92,7 @@
   </li>
   
   <li class="breadcrumb-item active" aria-current="page">
-    <small>SiteGround速度优化 -> Wordpress</small>
+    <small>利用GA hit builder跟踪邮件打开</small>
   </li>
   
   </ol>
@@ -105,37 +105,38 @@
     <div class="row justify-content-center">
       
         <div class="col-lg-8">
-          <p>前提：因为采用了wordpress建站，页面建构工具使用的elementor。可视化的操作虽然提高了速度，但是也造成了很多代码冗余。网站js太多，加载速度太慢。为此启动了sg的优化。现在记录一下，方便后来的设置。</p>
-<h2 id="网站速度理论基础">网站速度理论基础</h2>
-<p>网站打开速度和哪些因素相关呢？我们知道网站速度会影响实际的客户体验，同时也会影响谷歌自然搜索的排名，以及谷歌SEM中的着陆页体验和竞价。我们迫不及待的希望优化网站速度，那么速度究竟和哪些因素相关呢？
-用户在浏览器输入网址点击回车的之后，域名首先经过解析，对映成IP地址，然后浏览器向服务器发送访问请求，下载网页内容。服务器端根据浏览器的请求地址，准备页面资源和数据，返回给用户浏览器。浏览器再把数据渲染成丰富的网站页面，供用户观看。
-从其中的描述中可以大致看出几个影响网站速度的因素。</p>
-<ol>
-<li>域名解析时间</li>
-<li>服务器的性能</li>
-<li>服务器和用户浏览器的网络距离</li>
-<li>用户浏览器的性能。
-针对以上几个步骤，采取的主要方式为</li>
-<li>选择合适的DNS解释服务商</li>
-<li>提供缓存，增加静态页面，减少后端语言处理时间；提高服务器性能。</li>
-<li>选择和实际用户接近的服务器；使用CDN服务</li>
-<li>减少页面大小，减少js。</li>
-</ol>
-<p>下面就是我们的具体操作步骤。</p>
-<h2 id="三个设置选项">三个设置选项</h2>
-<h3 id="wordpress-插件">Wordpress 插件</h3>
-<p>Sg给wordpress配置了优秀的加速插件。叫做SGOptimizer。这里我们可以生成缓存，静态文件来帮助网站提高速度。</p>
-<h3 id="sg后台">SG后台</h3>
-<p>SG的后台也有很多优化的选项，其中大部分已经在Wordpress插件中设置过了。但也有一个是必须在这里开启的，就是phpmemcache功能。这个功能对提速非常有帮助。</p>
-<h3 id="连接免费cdn平台">连接免费CDN平台</h3>
-<p>SG和Cloudflare集成的非常深入，只要你有cloudflare的账户，在SG后台登陆之后就可以直接管理。
-cf的免费账户很容易开通，然后设置dns解析，等解析生效，确认网站没有故障基本就完成了操作。</p>
-<h2 id="配置">配置</h2>
-<p>不得不说，Siteground的新面板虽然反应速度慢，但却是极大的加速了用户的工作流程。一开始还惦记Cpanel的好处，但花了半小时时间认真研究了一下新面板，马上加入了真香队伍。大部分网站管理功能在左侧清晰可见，两三次点击就能到达目的地。</p>
-<h2 id="效果">效果</h2>
-<p>前两个缓存设置都比较成功，可以明显的感觉到网站速度的提升。</p>
-<p>但CDN因为线路的问题，在本地打开速度变得非常慢，而且容易出现故障。最后决定去掉了CF的CDN服务，没有感觉到太大的变化。</p>
+          <h1 id="邮件里的ga跟踪">邮件里的GA跟踪</h1>
+<p>方式：Html格式的邮件会自动请求文件中包含的img标签，利用img标签的地址和GA的hit关联起来，从而监控邮件的打开次数和时间，以及hit payload 中所包含的信息，并显示在GA的面板里。</p>
+<p>优势：可以把邮件打开看作是GA的event，利用统一的USER ID分析用户的邮件和网站行为，在同一个视图中进行关联。</p>
+<p>缺点：感觉ga的网址太过明显，而且和html的地址源不同，可能会被邮件系统拦截或者提示，目前没有见过真正应用的，可以当成原理展示吧。</p>
+<h2 id="demo">demo</h2>
+<p>目前有一名ID为abc的用户，参加了网站的SepSale活动，添加购物车但是没有完成购买，现在需要给他发一封促购邮件，并监测一下促购邮件效果。</p>
+<p>营销&amp;GA 参数</p>
+<p>跟踪id:&amp;tid  UA-130619534-1
+客户端id: &amp;cid  UUID aeb07fff-21cd-4876-ab4b-05f8c680bcd2
+user id: &amp;uid  abc
+事件：t=event&amp;ec=email&amp;ea=open
+文档路径：&amp;dp /email/
+文件标题：&amp;dt /Email-Test/
+系统信息字段
+广告系列字段：
+自定义维度1 ：&amp;cd1</p>
+<p>最终形成的hit 链接为：
+<a href="https://www.google-analytics.com/collect?">https://www.google-analytics.com/collect?</a>
+v=1&amp;t=event&amp;tid=UA-130619534-1&amp;cid=aeb07fff-21cd-4876-ab4b-05f8c680bcd2&amp;uid=abc&amp;ec=email&amp;ea=open&amp;dp=%2Femail%2F&amp;cn=SepSale&amp;cm=email&amp;cs=SepSale-EDM</p>
+<p>作为图像嵌入：
+<!-- raw HTML omitted --></p>
+<p>官方建议放入邮件html末尾，延迟加载影响。这样，用户在打开邮件的时候，跟踪标签会伪装成触发。回到GA实时监控，就能看到下图：</p>
+<p><img src="/pics/email-tracking.png" alt="email-tracking-ga"></p>
+<p>参考：</p>
+<p><a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/email">电子邮件跟踪 - Measurement Protocol</a></p>
+<p><a href="https://ga-dev-tools.appspot.com/hit-builder/">Hit Builder</a></p>
 
+          <div class="blog-tags">
+            <a href="https://garysmap.com/tags/ga/">GA</a>&nbsp;
+            <a href="https://garysmap.com/tags/email-tracking/">Email Tracking</a>&nbsp;
+            
+          </div>
           
         </div>
       
