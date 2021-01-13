@@ -6,10 +6,19 @@
     <description>Recent content on GarysMap 营销笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 08 Jan 2021 19:01:05 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 Jan 2021 20:13:09 +0800</lastBuildDate>
     
 	<atom:link href="https://garysmap.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SEO 101 - 什么是SEO？</title>
+      <link>https://garysmap.com/posts/moz-seo-beginner-tutorial-1/</link>
+      <pubDate>Wed, 13 Jan 2021 20:13:09 +0800</pubDate>
+      
+      <guid>https://garysmap.com/posts/moz-seo-beginner-tutorial-1/</guid>
+      <description>SEO是什么，为什么它很重要 欢迎你！很高兴你来到这里 如果您已经对SEO及其重要性有深刻的了解，则可以跳至第2章（尽管如此，我们仍建议您阅读本章末尾Google和Bing的最佳做法，它们是很有用的复习材料）。 对于其他人，本章将帮助您在学习过程中建立基本的SEO知识和信心。 什么是SEO？ SEO代表“搜索</description>
+    </item>
     
     <item>
       <title>MOZ SEO初学者指南 - 排名第一的权威指南</title>
@@ -21,30 +30,12 @@
     </item>
     
     <item>
-      <title>利用GA hit builder跟踪邮件打开</title>
-      <link>https://garysmap.com/posts/email-ga-tracking/</link>
-      <pubDate>Sat, 28 Nov 2020 21:19:21 +0800</pubDate>
-      
-      <guid>https://garysmap.com/posts/email-ga-tracking/</guid>
-      <description>邮件里的GA跟踪 方式：Html格式的邮件会自动请求文件中包含的img标签，利用img标签的地址和GA的hit关联起来，从而监控邮件的打开次数和时间，以及hit payload 中所包含的信息，并显示在GA的面板里。 优势：可以把邮件打开看作是GA的event，利用统一的USER ID分析用户的邮件和网站行为，在同一个视</description>
-    </item>
-    
-    <item>
       <title>[转载]如何在GA 中使用转化漏斗功能</title>
       <link>https://garysmap.com/posts/%E8%BD%AC%E8%BD%BDga%E7%9B%AE%E6%A0%87%E6%B8%A0%E9%81%93%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Thu, 07 May 2020 19:01:05 +0800</pubDate>
       
       <guid>https://garysmap.com/posts/%E8%BD%AC%E8%BD%BDga%E7%9B%AE%E6%A0%87%E6%B8%A0%E9%81%93%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
       <description>原始链接： Jeffshow.com: 如何在GA 中使用转化漏斗功能 一、引言 很多网站都有引导用户发生转化的相对固定的路径，比如电商类网站的首页 - 产品页 - 加入购物车 - 结算 - 下单完成，这样的路径我们称之为转化路径。经验表明，进入了转化路径的用户，在各个转化节点上会存在不同程度的流失，如果用图表来说明从前一步到达后一步的数据，大致会</description>
-    </item>
-    
-    <item>
-      <title>SiteGround速度优化 -&gt; Wordpress</title>
-      <link>https://garysmap.com/posts/7/</link>
-      <pubDate>Tue, 30 Jul 2019 18:23:20 +0800</pubDate>
-      
-      <guid>https://garysmap.com/posts/7/</guid>
-      <description>前提：因为采用了wordpress建站，页面建构工具使用的elementor。可视化的操作虽然提高了速度，但是也造成了很多代码冗余。网站js太多，加载速度太慢。为此启动了sg的优化。现在记录一下，方便后来的设置。 网站速度理论基础 网站打开速度和哪些因素相关呢？我们知道网站速度会影响实际的客户体验，同时</description>
     </item>
     
     <item>
@@ -66,24 +57,6 @@
     </item>
     
     <item>
-      <title>2019外贸独立站聊天神器推荐—Tidiochat</title>
-      <link>https://garysmap.com/posts/4/</link>
-      <pubDate>Mon, 22 Apr 2019 18:23:20 +0800</pubDate>
-      
-      <guid>https://garysmap.com/posts/4/</guid>
-      <description>简介 随着外贸独立站的热度升高，很多人需要用到网站在线聊天功能。比起邮件和打电话来，网站在线沟通没有口语要求，也能方便快捷的与客户沟通，获得客户邮件之后还能后续跟进。这对于外贸业务人员是非常合适的。 但是由于我们的母语背景，和中文网络环境对在线聊天功能的不重视，我见过很多外贸网站的聊天工具中文风格明显，</description>
-    </item>
-    
-    <item>
-      <title>Google Analytics 细化数据采集和衡量方案(会更新)</title>
-      <link>https://garysmap.com/posts/3/</link>
-      <pubDate>Fri, 08 Mar 2019 18:23:20 +0800</pubDate>
-      
-      <guid>https://garysmap.com/posts/3/</guid>
-      <description>利用Google Analytics内容分组对小型2B企业网站进行内容整合用户行为追踪 意义：制作一个报告维度，从细分网站内容出发，从自己的业务角度来衡量追踪用户数据，呈现出更有意义的报告。 目录： 目前数据采集和衡量现状和不足（目前的不足） 为什么进行数据采集？衡量的意义在哪里？（数字营销的价值衡量） 选择市</description>
-    </item>
-    
-    <item>
       <title>数字营销领域：技能和考证</title>
       <link>https://garysmap.com/posts/2/</link>
       <pubDate>Mon, 04 Feb 2019 18:23:20 +0800</pubDate>
@@ -99,15 +72,6 @@
       
       <guid>https://garysmap.com/posts/1/</guid>
       <description>昨天（2019年2月13日）Moz和SEOjourneyland 都推了一篇关于关键词用户用户意图的文章，即通过转化漏斗距离对关键词所代表的用户意图进行分类，然后组织内容，对用户群体进行细分。另外通过测试四种不同意图的管检测，查看谷歌SERP页面的表现，显示出谷歌对不同的用户意图也有了不同的内容偏向。</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://garysmap.com/pages/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://garysmap.com/pages/about/</guid>
-      <description>努力搬运分享一点数字营销的技巧方案 目前主题： Google Analytics 使用和分析方法 GTM 管理方案 数字营销理论和方法收集【杂】 网站优化 收藏其他好玩的东西 希望能有所收获吧</description>
     </item>
     
   </channel>
